@@ -122,6 +122,12 @@
             </div>
 
             <h4 class="name">{{ illustrator.name || '' }}</h4>
+            <ul class="tags">
+              <li
+                v-for="(tag, j) in illustrator.tags"
+                :key="j"
+              >{{ tag }}</li>
+            </ul>
         </button>
         </div>
       </section>

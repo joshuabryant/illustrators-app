@@ -116,7 +116,14 @@ aside.tags {
 .card .name {
   font-size: 14px;
   margin: 0;
-  padding: 5px 0 0; }
+  padding: 7px 0 0; }
+
+.card ul.tags {
+  margin: 5px 0 0;
+  min-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .name {
   margin: .25em 0; }
