@@ -127,11 +127,14 @@
       </section>
 
       <aside class="tags">
-        <div v-for="(tag, k) in allTags" :key="k">
-          <label>
-            <input v-model="filters" type="checkbox" name="filters" :value="tag">
-            {{ tag }}
-          </label>
+        <div class="tag-stick">
+          <h4>Filters:</h4>
+          <div v-for="(tag, k) in allTags" :key="k">
+            <label>
+              <input v-model="filters" type="checkbox" name="filters" :value="tag">
+              {{ tag }}
+            </label>
+          </div>
         </div>
       </aside>
     </main>
