@@ -59,7 +59,12 @@ var app = new Vue({
         }).then((res) => {
           return res.json();
         }).then((data) => {
+          const name = this.form.name.trim()
           this.illustrators = data.illustrators;
+
+          const i = this.illustrators.findIndex((ill) =>  ill.name === name);
+          const id = this.illustrators[i].id;
+          this.toggleViewMode(id, i);
 
           this.form.name = '';
           this.form.website = '';
